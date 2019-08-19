@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wines</title>
+        <script src="js/main.js"></script>
+        <script src="js/wine.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Wines</h1>
+        </header>
+        <div class="mainArea">
+            <nav>
+                <h3>List of Wines</h3>
+                <ul id="wines"></ul>
+                <button id="more">Add more wine!</button>
+            </nav>
+            <section id="details">
+                <h3>Wine detail</h3>
+                <div>
+                    <p><strong>Name:</strong></p>
+                    <p id="name"></p>
+                </div>
+                <div>
+                    <p><strong>Vineyard:</strong></p>
+                    <p id="vineyard"></p>
+                </div>
+                <div>
+                    <p><strong>Variety:</strong></p>
+                    <p id="variety"></p>
+                </div>
+                <div>
+                    <p><strong>Year:</strong></p>
+                    <p id="year"></p>
+                </div>
+                <div>
+                    <p><strong>Alcohol (%):</strong></p>
+                    <p id="alcohol"></p>
+                </div>
+                <div>
+                    <p><strong>Country:</strong></p>
+                    <p id="country"></p>
+                </div>
+            </section>
+        </div>
+        <div id="newWine">
+            <form>
+                <input id="newName" type="text" placeholder="Name" required />
+                <input id="newVineyard" type="text" placeholder="Vineyard" required />
+                <input id="newVariety" type="text" placeholder="Variety" required />
+                <input id="newYear" type="number" placeholder="Year" min="1900" max="2019" required />
+                <input id="newAlcohol" type="number" placeholder="Alcohol" min="0" max="100" required />
+                <input id="newCountry" type="text" placeholder="Country" required />
+                <input type="submit" value="Add">
+            </form>
+        </div>
+    </body>
+</html>
